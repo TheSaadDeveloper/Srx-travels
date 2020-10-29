@@ -1,0 +1,161 @@
+.navbar {
+  background-color: black;
+  min-height: 65px;
+  max-height: 600px;
+  width: 100vw;
+  position: fixed;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__container {
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.navbar__title {
+  margin: 5px 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 2.1rem;
+  color: white;
+  z-index: 10000;
+}
+
+.navbar__titleLogo {
+  font-size: 2.3rem;
+  padding: 2px;
+}
+
+.navbar__menuLogo {
+  visibility: hidden;
+  font-size: 1.8rem;
+  color: white;
+  position: fixed;
+  left: 90vw;
+  margin-top: 9px;
+  cursor: pointer;
+}
+
+.navbar__menu {
+  margin-right: 50px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  list-style: none;
+  visibility: visible;
+}
+
+.active {
+  visibility: visible;
+  width: 100vw;
+  margin-top: 68px;
+  position: absolute;
+  background-color: black;
+  z-index: 0.1;
+  left: 0px;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.navbar__option {
+  margin: auto 25px auto 20px;
+  font-size: 1.4em;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar__option:hover {
+  color: rgb(255, 166, 0);
+  transition: all 0.2s ease-in;
+}
+
+.navbar__signUp {
+  text-decoration: none;
+  font-size: 1.3em;
+  color: white;
+  border: 1px white ridge;
+  padding: 2px 8px;
+}
+
+.navbar__signUp:hover {
+  background: #fff;
+  color: #242424;
+  transition: 250ms;
+}
+
+@media screen and (max-width: 960px) {
+  .navbar__menuLogo {
+    position: fixed;
+    margin-left: 2%;
+    visibility: visible;
+  }
+  .navbar__menu {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: -1000px;
+    left: 0px;
+    opacity: 1;
+    transition: all 0.5s linear;
+  }
+
+  .navbar__menu.active {
+    background: #2c2c2c;
+    top: 1px;
+    /* opacity: 1; */
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .navbar__options {
+    display: flex;
+    position: relative;
+    margin-left: -30px;
+    justify-content: space-between;
+  }
+
+  .navbar__option {
+    margin-bottom: 50px;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .navbar__option:hover {
+    text-align: left;
+    background-color: white;
+    transition: all 0.1s ease;
+    width: 93vw;
+    color: black;
+    border-radius: 0;
+  }
+
+  .navbar__signUp {
+    margin: 40%;
+    display: inline-block;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: 2px;
+    width: 100vw;
+    text-decoration: none;
+    font-size: 1.5rem;
+    /* background-color: transparent; */
+    color: white;
+    padding: 14px 25px;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-out;
+  }
+}

@@ -1,0 +1,30 @@
+.btn {
+  border-radius: 2px;
+}
+
+.primaryBtn-style {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.outlineBtn-style {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.outlineBtn-style:hover {
+  border-color: white;
+}
+
+.mediumBtn {
+  height: 45px;
+  padding: 10px;
+  width: 270px;
+}
+
+.largeBtn {
+  height: 50px;
+  padding: 5px;
+  width: 100%;
+}

@@ -1,0 +1,28 @@
+.cards__container {
+  width: 100vw;
+  min-height: 120%;
+  max-height: 120%;
+  background-color: white;
+}
+
+.cards__container > h1 {
+  padding: 50px;
+}
+
+.cards__container > ul {
+  background-color: white;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: space-evenly;
+  justify-content: space-evenly;
+}
+
+.cards__container > ul > li {
+  margin-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  list-style: none;
+}

@@ -1,0 +1,49 @@
+.card__item {
+  width: 260px;
+  height: 400px;
+  background-color: white;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 6px 8px 0px #ababab;
+  overflow: hidden;
+}
+
+.card__item-imageWrap::after {
+  content: attr(data-category);
+  position: relative;
+  bottom: 28px;
+  margin-left: 1px;
+  padding: 3px 15px;
+  max-width: calc((100%)-60px);
+  font-size: 12px;
+  font-weight: 12px;
+  color: #fff;
+  background-color: #1f98f4;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.card__item-image {
+  border-radius: 16px;
+  object-fit: cover;
+  width: 260px;
+  height: 220px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.card__item-image:hover {
+  height: 210px;
+  color: white;
+}
+
+.card__item-text {
+  margin: 10px 35px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-variant-caps: petite-caps;
+  color: black;
+  text-align: left;
+  font-size: 1.7rem;
+}
